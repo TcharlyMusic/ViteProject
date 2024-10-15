@@ -1,11 +1,20 @@
 import './style.css'
 
+async function fetchPopData() {
+	// Fetch the data file
+	let response = await fetch('./ViteProject/datas/datas.json');
+
+	// Get the response data as JSON
+	let json = await response.json();
+	
+	return json;
+}
+
 // Creating the Results Table
 function CreateTableWithValue(divHtmlItem, value)
 {
 	// Loading Pop File
-	//const fs = require('fs');
-	//let data = fs.readFileSync('pop.list.txt', 'UTF-8');
+	let data = fetchPopData();
 
 	// Loading Pop Datas
 	let popList = [ 
@@ -70,7 +79,7 @@ function CreateTableWithValue(divHtmlItem, value)
 			str += '<td>' + item[2] + '</td>';
 			str += '<td>' + item[3] + '</td>';
 			str += '<td>' + item[4] + '</td>';
-			str += '<td><img src="/images/' + item[1] + '.webp"></td>';
+			str += '<td><img src="./ViteProject/images/' + item[1] + '.webp" /></td>';
 			str += '</tr>';
 		}
 	}
