@@ -1,27 +1,9 @@
 import './style.css'
 
-async function fetchPopData() {
-	// Fetch the data file
-	let response = await fetch('./ViteProject/datas/datas.json');
-
-	// Get the response data as JSON
-	let json = await response.json();
-	
-	return json;
-}
-
-// Creating the Results Table
-function CreateTableWithValue(divHtmlItem, value)
+function fetchPopData()
 {
-	// Loading Pop File
-	let data = fetchPopData();
-
 	// Loading Pop Datas
-	let popList = [ 
-		['SE  ','60100',' 010.90','Pops!           ','Yara Flor (Future State)'                 ],
-		['2P  ','14355','B089.90','Pop! Heroes     ','Wonder Woman & Steve Trevor'              ],
-		['2P  ','60162',' 017.99','Pop! Movies     ','Superman & Lois Flying [Special Edition]' ],
-		['0002','26002','B019.64','Pop! GPK        ','Ghastly Ashley'                           ],
+	let popList2 = [ 
 		['0003','03012',' 039.99','Pop!            ','Daenerys Targaryen'                       ],
 		['0003','05860',' 010.00','Pop!            ','Hermione Granger'                         ],
 		['0003','55010',' 014.90','Pop! Comic Cover','Wonder Woman'                             ],
@@ -50,6 +32,30 @@ function CreateTableWithValue(divHtmlItem, value)
 		['0045','29955',' 017.00','Pop! Rides      ','Elasticgirl on Elasticycle'               ],
 	]
 
+	let popList = [ 
+		{	"Numero":"SE  ",	"CodeBarre":"60100",	"Estimation":" 010.90",	"TypeDePop":"Pops!           ",	"NomComplet":"Yara Flor (Future State)"                 },
+		{	"Numero":"2P  ",	"CodeBarre":"14355",	"Estimation":"B089.90",	"TypeDePop":"Pop! Heroes     ",	"NomComplet":"Wonder Woman & Steve Trevor"              },
+		{	"Numero":"2P  ",	"CodeBarre":"60162",	"Estimation":" 017.99",	"TypeDePop":"Pop! Movies     ",	"NomComplet":"Superman & Lois Flying [Special Edition]" },
+		{	"Numero":"0002",	"CodeBarre":"26002",	"Estimation":"B019.64",	"TypeDePop":"Pop! GPK        ",	"NomComplet":"Ghastly Ashley"                           }
+	]
+
+	// Fetch the data file
+	//let response = await fetch('./ViteProject/datas/datas.json');
+
+	// Get the response data as JSON
+	//let jsonDatas = await response.json();
+	
+	//return jsonDatas;
+	//return response;
+	return popList;
+}
+
+// Creating the Results Table
+function CreateTableWithValue(divHtmlItem, value)
+{
+	// Loading Pop File
+	let popDatas = fetchPopData();
+
 	// Empty starting table
 	let str = '<table border="1" width="100%"><tbody>';
 
@@ -64,22 +70,24 @@ function CreateTableWithValue(divHtmlItem, value)
 	str += '</tr>';
 
 	// loop on all the item of the Pop List
-	for (let i = 0; i < popList.length; i++)
+	for (let i = 0; i < popDatas.length; i++)
 	{
 		// Get a Item
-		let item = popList[i];
+		//let item = popList[i];
+		let item = popDatas[i];
 
 		// If it's the good Number
-		if ( (item[0].includes(value) == true) || (item[1].includes(value) == true) || (item[4].includes(value) == true) || (item[4].toUpperCase().includes(value.toUpperCase()) == true))
+		//if ( (item[0].includes(value) == true) || (item[1].includes(value) == true) || (item[4].includes(value) == true) || (item[4].toUpperCase().includes(value.toUpperCase()) == true))
+		if ( (item["Numero"].includes(value) == true) || (item["CodeBarre"].includes(value) == true) || (item["NomComplet"].includes(value) == true) || (item["NomComplet"].toUpperCase().includes(value.toUpperCase()) == true))
 		{
 			// Add it to the list
 			str += '<tr>';
-			str += '<td>' + item[0] + '</td>';
-			str += '<td>' + item[1] + '</td>';
-			str += '<td>' + item[2] + '</td>';
-			str += '<td>' + item[3] + '</td>';
-			str += '<td>' + item[4] + '</td>';
-			str += '<td><img src="./ViteProject/images/' + item[1] + '.webp" /></td>';
+			str += '<td>' + item["Numero"] + '</td>';
+			str += '<td>' + item["CodeBarre"] + '</td>';
+			str += '<td>' + item["Estimation"] + '</td>';
+			str += '<td>' + item["TypeDePop"] + '</td>';
+			str += '<td>' + item["NomComplet"] + '</td>';
+			str += '<td><img src="/ViteProject/images/' + item["CodeBarre"] + '.webp" width="32" height="32" /></td>';
 			str += '</tr>';
 		}
 	}
