@@ -475,7 +475,7 @@ function CreateTableWithValue(divHtmlItem, value)
 	let str = '<br><table border="1" width="100%"><tbody>';
 
 	// Add it to the list
-	str += '<tr style="background-color:#0000E0; text-color:#FFFFE0;">';
+	str += '<tr style="background-color:#000000; text-color:#FFFFE0;">';
 	str += '<td><b>Numéro</b></td>';
 	str += '<td><b>Code Barre</b></td>';
 	str += '<td><b>Estimation</b></td>';
