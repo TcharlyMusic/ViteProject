@@ -485,12 +485,13 @@ function CreateTableWithValue(divHtmlItem, value)
 	for (let i = 0; i < popDatas.length; i++)
 	{
 		// Get a Item
-		//let item = popList[i];
 		let item = popDatas[i];
 
 		// If it's the good Number
-		//if ( (item[0].includes(value) == true) || (item[1].includes(value) == true) || (item[4].includes(value) == true) || (item[4].toUpperCase().includes(value.toUpperCase()) == true))
-		if ( (item["Numero"].includes(value) == true) || (item["CodeBarre"].includes(value) == true) || (item["NomComplet"].includes(value) == true) || (item["NomComplet"].toUpperCase().includes(value.toUpperCase()) == true))
+		if ((item["Numero"].includes(value) == true) ||
+		    (item["CodeBarre"].includes(value) == true) ||
+			(item["NomComplet"].includes(value) == true) ||
+			(item["NomComplet"].toUpperCase().includes(value.toUpperCase()) == true))
 		{
 			// Add it to the list
 			str += '<tr>';
