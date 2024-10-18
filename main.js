@@ -4,14 +4,14 @@ function fetchPopData_NotAsync()
 {
 	// Loading Pop Datas
 	let popList = [ 
-		{	"Numero":"SE  ",	"CodeBarre":"60100",	"Estimation":" 010.90",	"TypeDePop":"Pops!           ",	"NomComplet":"Yara Flor (Future State)"                 },
-		{	"Numero":"2P  ",	"CodeBarre":"14355",	"Estimation":"B089.90",	"TypeDePop":"Pop! Heroes     ",	"NomComplet":"Wonder Woman & Steve Trevor"              },
-		{	"Numero":"2P  ",	"CodeBarre":"60162",	"Estimation":" 017.99",	"TypeDePop":"Pop! Movies     ",	"NomComplet":"Superman & Lois Flying [Special Edition]" },
-		{	"Numero":"0002",	"CodeBarre":"26002",	"Estimation":"B019.64",	"TypeDePop":"Pop! GPK        ",	"NomComplet":"Ghastly Ashley"                           },
-		{	"Numero":"0003",	"CodeBarre":"03012",	"Estimation":" 039.99",	"TypeDePop":"Pop!            ",	"NomComplet":"Daenerys Targaryen"                       },
-		{	"Numero":"0003",	"CodeBarre":"05860",	"Estimation":" 010.00",	"TypeDePop":"Pop!            ",	"NomComplet":"Hermione Granger"                         },
-		{	"Numero":"0003",	"CodeBarre":"55010",	"Estimation":" 014.90",	"TypeDePop":"Pop! Comic Cover",	"NomComplet":"Wonder Woman"                             },
-		{	"Numero":"0003",	"CodeBarre":"60661",	"Estimation":" 040.99",	"TypeDePop":"Pop! Comic Cover",	"NomComplet":"Scarlet Witch [Special Edition]"          },
+		{ "Numero":"SE  ", "CodeBarre":"60100", "Estimation":" 010.90", "TypeDePop":"Pops!           ", "NomComplet":"Yara Flor (Future State)" },
+		{ "Numero":"2P  ", "CodeBarre":"14355", "Estimation":"B089.90", "TypeDePop":"Pop! Heroes     ", "NomComplet":"Wonder Woman & Steve Trevor" },
+		{ "Numero":"2P  ", "CodeBarre":"60162", "Estimation":" 017.99", "TypeDePop":"Pop! Movies     ", "NomComplet":"Superman & Lois Flying [Special Edition]" },
+		{ "Numero":"0002", "CodeBarre":"26002", "Estimation":"B019.64", "TypeDePop":"Pop! GPK        ", "NomComplet":"Ghastly Ashley" },
+		{ "Numero":"0003", "CodeBarre":"03012", "Estimation":" 039.99", "TypeDePop":"Pop!            ", "NomComplet":"Daenerys Targaryen" },
+		{ "Numero":"0003", "CodeBarre":"05860", "Estimation":" 010.00", "TypeDePop":"Pop!            ", "NomComplet":"Hermione Granger" },
+		{ "Numero":"0003", "CodeBarre":"55010", "Estimation":" 014.90", "TypeDePop":"Pop! Comic Cover", "NomComplet":"Wonder Woman" },
+		{ "Numero":"0003", "CodeBarre":"60661", "Estimation":" 040.99", "TypeDePop":"Pop! Comic Cover", "NomComplet":"Scarlet Witch [Special Edition]" },
 		{	"Numero":"0003",	"CodeBarre":"60663",	"Estimation":" 012.95",	"TypeDePop":"Pop! Comic Cover",	"NomComplet":"Captain Marvel (Monica Rambeau)"          },
 		{	"Numero":"0003",	"CodeBarre":"65606",	"Estimation":" 009.99",	"TypeDePop":"Pop!            ",	"NomComplet":"Alicent Hightower"                        },
 		{	"Numero":"0004",	"CodeBarre":"57870",	"Estimation":" 074.90",	"TypeDePop":"Pop! Die-Cast   ",	"NomComplet":"Wonder Woman [Exclusive] "                },
@@ -465,20 +465,22 @@ async function fetchPopData_Async()
 // Creating the Results Table
 function CreateTableWithValue(divHtmlItem, value)
 {
+	let popCounter = 0;
+	
 	// Loading Pop File
 	let popDatas = fetchPopData_NotAsync();
 	//let popDatas = fetchPopData_Async();
 
 	// Empty starting table
-	let str = '<table border="1" width="100%"><tbody>';
+	let str = '<br><table border="1" width="100%"><tbody>';
 
 	// Add it to the list
-	str += '<tr>';
-	str += '<td>Numéro</td>';
-	str += '<td>Code Barre</td>';
-	str += '<td>Estimation</td>';
-	str += '<td>Type de Pop</td>';
-	str += '<td>Nom complet</td>';
+	str += '<tr style="background-color:#0000E0;">';
+	str += '<td><b>Numéro</b></td>';
+	str += '<td><b>Code Barre</b></td>';
+	str += '<td><b>Estimation</b></td>';
+	str += '<td><b>Type de Pop</b></td>';
+	str += '<td><b>Nom complet</b></td>';
 	str += '</tr>';
 
 	// loop on all the item of the Pop List
@@ -502,6 +504,9 @@ function CreateTableWithValue(divHtmlItem, value)
 			str += '<td>' + item["NomComplet"] + '</td>';
 			str += '</tr>';
 			str += '</tr>';
+			
+			// One more Pop
+			popCounter++;
 		}
 	}
 
@@ -515,6 +520,9 @@ function CreateTableWithValue(divHtmlItem, value)
 
 	// Send it to the HTML of the DIV
 	document.getElementById(divHtmlItem).innerHTML = str;
+
+	// Update the number of Pops
+	document.getElementById("numberOfPops").innerHTML = 'Liste des Pops (' + popCounter + '/' + popDatas.length + ')';
 }
 
 // Keypress event ? 
