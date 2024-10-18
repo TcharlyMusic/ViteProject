@@ -475,12 +475,12 @@ function CreateTableWithValue(divHtmlItem, value)
 	let str = '<br><table border="1" width="100%"><tbody>';
 
 	// Add it to the list
-	str += '<tr style="background-color:#000000; text-color:#FFFFE0;">';
-	str += '<td><b>Numéro</b></td>';
-	str += '<td><b>Code Barre</b></td>';
-	str += '<td><b>Estimation</b></td>';
-	str += '<td><b>Type de Pop</b></td>';
-	str += '<td><b>Nom complet</b></td>';
+	str += '<tr style="background-color:skyblue;">';
+	str += '<td><b><font color="#000000">Numéro</b></td>';
+	str += '<td><b><font color="#000000">Code Barre</b></td>';
+	str += '<td><b><font color="#000000">Estimation</b></td>';
+	str += '<td><b><font color="#000000">Type de Pop</b></td>';
+	str += '<td><b><font color="#000000">Nom complet</b></td>';
 	str += '</tr>';
 
 	// loop on all the item of the Pop List
