@@ -475,8 +475,8 @@ function CreateTableWithValue(divHtmlItem, value)
 	let popCounter = 0;
 	
 	// Loading Pop File
-	let popDatas = fetchPopData_NotAsync();
-	//let popDatas = fetchPopData_Async();
+	//let popDatas = fetchPopData_NotAsync();
+	let popDatas = fetchPopData_Async();
 
 	// Empty starting table
 	let str = '<br><table border="1" width="100%"><tbody>';
