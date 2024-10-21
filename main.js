@@ -10,7 +10,7 @@ function PopData_NotAsync()
 async function PopData_Async()
 {
 	// Fetch the data file
-	let response = await fetch('./ViteProject/datas/datas.json');
+	let response = await fetch('./datas/datas.json');
 
 	// Get the response data as JSON
 	let jsonDatas = await response.json();
