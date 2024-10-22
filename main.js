@@ -3,7 +3,7 @@ import './style.css'
 function PopData_NotAsync()
 {
 	// Loading Pop Datas
-	let popList = [{ "Numero":"SE",   "CodeBarre":"60100", "Abime":"",   "Estimation":"010.90", "Genre":"F", "TypeDePop":"Pops!",            "NomComplet":"Yara Flor (Future State)" }];
+	let popList = [{ "Numero":"SE",   "CodeBarre":"60100", "Infos":"",   "Estimation":"010.90", "Genre":"F", "TypeDePop":"Pops!",            "NomComplet":"Yara Flor (Future State)" }];
 	return popList;
 }
 
@@ -35,7 +35,7 @@ async function CreateTableWithValue(divHtmlItem, value)
 	str += '<tr style="background-color:skyblue;">';
 	str += '<td><b><font color="#000000">Numéro</b></td>';
 	str += '<td><b><font color="#000000">Code Barre</b></td>';
-	str += '<td><b><font color="#000000">Abime</b></td>';
+	str += '<td><b><font color="#000000">Infos</b></td>';
 	str += '<td><b><font color="#000000">Estimation</b></td>';
 	str += '<td><b><font color="#000000">Genre</b></td>';
 	str += '<td><b><font color="#000000">Type de Pop</b></td>';
@@ -51,26 +51,19 @@ async function CreateTableWithValue(divHtmlItem, value)
 		// If it's the good Number
 		if ((item["Numero"].includes(value) == true) ||
 			(item["CodeBarre"].includes(value) == true) ||
-			(item["Abime"].includes(value) == true) ||
+			(item["Infos"].includes(value) == true) ||
 			(item["NomComplet"].includes(value) == true) ||
 			(item["NomComplet"].toUpperCase().includes(value.toUpperCase()) == true))
 		{
-			// Add it to the list
-			if (item["Abime"] == 'CMD')
-			{
-				str += '<tr style="background-color:skyblue;">';
-			}
-			else if (item["Abime"] == 'REC')
-			{
-				str += '<tr style="background-color:red;">';
-			}
-			else
-			{
-				str += '<tr>';
-			}
+			// Color of the Row
+			if      (item["Infos"] == 'CMD') { str += '<tr style="background-color:skyblue;">';	}
+			else if (item["Infos"] == 'REC') { str += '<tr style="background-color:red;">';     }
+			else                             { str += '<tr>';                                   }
+
+			// Different row Informations
 			str += '<td>' + item["Numero"] + '</td>';
 			str += '<td>' + item["CodeBarre"] + '</td>';
-			str += '<td>' + item["Abime"] + '</td>';
+			str += '<td>' + item["Infos"] + '</td>';
 			str += '<td>' + item["Estimation"] + '</td>';
 			str += '<td>' + item["Genre"] + '</td>';
 			str += '<td>' + item["TypeDePop"] + '</td>';
