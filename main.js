@@ -60,6 +60,10 @@ async function CreateTableWithValue(divHtmlItem, value)
 			{
 				str += '<tr style="background-color:skyblue;">';
 			}
+			else if (item["Abime"] == 'REC')
+			{
+				str += '<tr style="background-color:red;">';
+			}
 			else
 			{
 				str += '<tr>';
