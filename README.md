@@ -14,7 +14,9 @@
 11. [Deploiement en local](#ViteProject-11)
 12. [Deploiement sur GitHub](#ViteProject-12)
 13. [Architecture du site](#ViteProject-13)
-14. [Mes alertes ne marchent pas](#ViteProject-14)
+14. [Images](#ViteProject-14)
+15. [Alertes](#ViteProject-15)
+16. [Tables](#ViteProject-16)
 
 <a name="ViteProject-01"></a>
 ## 1) Installation de Vite pour le nouveau Projet 
