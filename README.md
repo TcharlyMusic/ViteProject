@@ -16,7 +16,7 @@
 13. [Architecture du site](#ViteProject-13)
 14. [Mes alertes ne marchent pas](#ViteProject-14)
 
-<a name="#ViteProject-01"></a>
+<a name="ViteProject-01"></a>
 ## 1) Installation de Vite pour le nouveau Projet 
 Dans le *terminal*, se placer dans le repertoire ou l'on veut que le projet se trouve et executer la commande : 
 ```bash
@@ -28,7 +28,7 @@ Il faut alors :
 - Validation du Framework : `vanilla`
 - Choix du langage : `javascript`
 
-<a name="#ViteProject-02"></a>
+<a name="ViteProject-02"></a>
 ## 2) Installation et mise à jour des Packages
 Executer les commandes : 
 ```bash
@@ -38,7 +38,7 @@ npm run dev
 ```
 Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 
-<a name="#ViteProject-03"></a>
+<a name="ViteProject-03"></a>
 ## 3) Modification du fichier index.html
 AVANT :
 ```html
@@ -53,7 +53,7 @@ APRES :
     </div>
 ```
 
-<a name="#ViteProject-04"></a>
+<a name="ViteProject-04"></a>
 ## 4) Modification du fichier main.js
 Remplacer tout le code du `main.js` par :
 ```js
@@ -63,7 +63,7 @@ let app = document.getElementById("app");
 bouton.addEventListener("click", () => { app.innerHTML += "<p>Bien joué !</p>" })
 ```
 
-<a name="#ViteProject-05"></a>
+<a name="ViteProject-05"></a>
 ## 5) Test des Modifications
 Executer la commande : 
 ```bash
@@ -71,7 +71,7 @@ npm run dev
 ```
 Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 
-<a name="#ViteProject-06"></a>
+<a name="ViteProject-06"></a>
 ## 6) Creer le repo sur GitHub
 - Connexion à `GitHub`
 - Dans `Repositories`, cliquer sur `New` et vérifier le repo soit public
@@ -87,14 +87,14 @@ git remote add origin https://github.com/TcharlyMusic/ViteProject.git
 git push -u origin main
 ```
 
-<a name="#ViteProject-07"></a>
+<a name="ViteProject-07"></a>
 ## 7) Installer gh-pages
 Executer la commande : 
 ```bash
 npm install gh-pages --save-dev
 ```
 
-<a name="#ViteProject-08"></a>
+<a name="ViteProject-08"></a>
 ## 8) Modification des scripts du package.json
 Modifier le fichier `package.json` :
 AVANT:
@@ -116,7 +116,7 @@ APRES:
   },
 ```
 
-<a name="#ViteProject-09"></a>
+<a name="ViteProject-09"></a>
 ## 9) Modification du fichier Homepage du package.json
 AVANT:
 ```js
@@ -130,7 +130,7 @@ APRES (remplacer `<username>` par celui sur GitHub) :
   "homepage": "https://<username>.github.io/",
 ```
 
-<a name="#ViteProject-10"></a>
+<a name="ViteProject-10"></a>
 ## 10) Creation de la configuration Vite
 Ajouter le fichier 'vite.config.js' dans le repo et ajouter le contenu en modifier le `<NomDuRepo>` avec celui creer sur GitHub (ne pas oublier les '/') : 
 ```js
@@ -140,21 +140,21 @@ export default defineConfig({
 })
 ```
 
-<a name="#ViteProject-11"></a>
+<a name="ViteProject-11"></a>
 ## 11) Deploiement en local
 ```bash
 npm run dev
 ```
 Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 
-<a name="#ViteProject-12"></a>
+<a name="ViteProject-12"></a>
 ## 12) Deploiement sur GitHub
 ```bash
 npm run deploy
 ```
 Le site est alors fonctionnel sur "https://TcharlyMusic.github.io/ViteProject"
 
-<a name="#ViteProject-13"></a>
+<a name="ViteProject-13"></a>
 ## 13) Architecture du site
 ```
 projet/
@@ -166,16 +166,16 @@ projet/
 └── style.css
 ```
 
-<a name="#ViteProject-14"></a>
+<a name="ViteProject-14"></a>
 ## 14) Mes alertes ne marchent pas
 
 {{< alert "circle-info" >}}
 Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer `npm run deploy` dans un *terminal*.
 {{< /alert >}}
 
-<a name="#ViteProject-14"></a>
+<a name="ViteProject-14"></a>
 ## 15) Image
-![Texte alternatif](https://example.com/image.jpg "Le titre de mon image")
+![Texte affiché pour l'image](https://example.com/image.jpg "Texte du Tooltip de l'image")
 
 
 
