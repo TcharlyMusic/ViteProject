@@ -1,14 +1,14 @@
 # ViteProject
 
 ## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+1. [Installation de Vite pour le nouveau Projet](#ViteProject-01)
+2. [Installation et mise à jour des Packages](#ViteProject-02)
+3. [Modification du fichier index.html](#ViteProject-03)
+4. [Collaboration](#ViteProject-04)
+5. [FAQs](#ViteProject-05)
 
-<a name="general-info"></a>
-## 1) Installation de **Vite** pour le nouveau Projet 
+<a name="#Vite-01"></a>
+## 1) Installation de Vite pour le nouveau Projet 
 Dans le *terminal*, se placer dans le repertoire ou l'on veut que le projet se trouve et executer la commande : 
 ```bash
 npm create vite@latest
@@ -19,6 +19,7 @@ Il faut alors :
 - Validation du Framework : `vanilla`
 - Choix du langage : `javascript`
 
+<a name="#Vite-02"></a>
 ## 2) Installation et mise à jour des Packages
 Executer les commandes : 
 ```bash
@@ -28,6 +29,7 @@ npm run dev
 ```
 Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 
+<a name="#Vite-03"></a>
 ## 3) Modification du fichier index.html
 AVANT :
 ```html
