@@ -177,4 +177,15 @@ Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer 
 ## 15) Image
 ![Some Text](https://wallpapercave.com/wp/nV132Vj.jpg "In the Tooltip")
 
+## 16) Special Warning Boxes
+[!NOTE]  
+Highlights information that users should take into account, even when skimming.
+
+[!IMPORTANT]  
+Crucial information necessary for users to succeed.
+
+[!WARNING]  
+Critical content demanding immediate user attention due to potential risks.
+
+
 
