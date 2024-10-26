@@ -167,17 +167,11 @@ projet/
 ```
 
 <a name="ViteProject-14"></a>
-## 14) Mes alertes ne marchent pas
-
-{{< alert "circle-info" >}}
-Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer `npm run deploy` dans un *terminal*.
-{{< /alert >}}
-
-<a name="ViteProject-15"></a>
-## 15) Image
+## 14) Affichage MarkDown d'une Image
 ![Some Text](https://wallpapercave.com/wp/nV132Vj.jpg "In the Tooltip")
 
-## 16) Special Warning Boxes
+<a name="ViteProject-15"></a>
+## 15) Affichage MarkDown d'information spécifique 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
 
@@ -194,7 +188,7 @@ Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer 
 > Negative potential consequences of an action.
 
 <a name="ViteProject-16"></a>
-## 16) Tables
+## 16) Affichage MarkDown de Tables
 
 | **Left**     | **Centered**     | **Right**                  |
 | :----------- | :--------------: | -------------------------: |
