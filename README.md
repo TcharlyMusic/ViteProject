@@ -64,9 +64,11 @@ git branch -M main
 git remote add origin https://github.com/TcharlyMusic/ViteProject.git
 git push -u origin main
 ```
-{{< alert "circle-info" >}}
+
+{{<alert "circle-info">}}
 Lors de la création d'un repo *vraiment* vide (pas de `README`, pas de `.gitignore`, rien), ces commandes sont listées en bas de la page.
-{{< /alert >}}
+{{</alert>}}
+
 
 ## 7) Installer gh-pages
 Executer la commande : 
@@ -95,15 +97,14 @@ APRES:
   },
 ```
 
-## 9) Modification de la homepage 
-Dans le fichier `package.json`, mettre le bon nom du repo dans `homepage` : 
+## 9) Modification du fichier package.json
 AVANT:
 ```js
 {
   "name": "viteproject",
 ```
 APRES:
-```bash
+```js
 {
   "name": "viteproject",
   "homepage": "https://TcharlyMusic.github.io/",
