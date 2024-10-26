@@ -1,5 +1,13 @@
 # ViteProject
 
+## Table of Contents
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
+
+<a name="general-info"></a>
 ## 1) Installation de **Vite** pour le nouveau Projet 
 Dans le *terminal*, se placer dans le repertoire ou l'on veut que le projet se trouve et executer la commande : 
 ```bash
