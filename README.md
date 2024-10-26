@@ -200,5 +200,21 @@ Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer 
 | :----------- | :--------------: | -------------------------: |
 | This is left | Text is centered | And this is right-aligned  |
 | More text    | Even more text   | And even more to the right |
-| Adding Pipe  | Even \| text     | **test**                   |
+| Adding Pipe  | Even \| text     | *some italic*              |
+
+<a name="ViteProject-17"></a>
+## 17) Colors
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
+
+# TODOs:
+
+- <r>TODO:</r> Important thing to do
+- <o>TODO:</o> Less important thing to do
+- <g>DONE:</g> Breath deeply and improve karma
+
+
 
