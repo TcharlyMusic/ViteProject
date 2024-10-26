@@ -16,7 +16,7 @@ cd ViteProject
 npm install
 npm run dev
 ```
-Un test en local est alors possible sur l'url indiqué (http://localhost:5173)
+Un test en local est alors possible sur l'url indiqué (http://localhost:XXXX)
 
 ## 3) Modification du fichier index.html
 AVANT :
@@ -33,7 +33,7 @@ APRES :
 ```
 
 ## 4) Modification du fichier main.js
-=> Remplacer le code du main.js par celui-ci
+Remplacer tout le code du main.js par :
 ```js
 import './style.css'
 let bouton = document.getElementById("clic-btn");
@@ -45,13 +45,13 @@ bouton.addEventListener("click", () => { app.innerHTML += "<p>Bien joué !</p>" 
 ```bash
 npm run dev
 ```
+Un test en local est alors possible sur l'url indiqué (http://localhost:XXXX)
 
 ## 6) Creer le repo sur GitHub
-=> Connexion à GITHUB
-=> dans Repositories, cliquer sur new (vérifier le repo soit public)
-=> mettre le nom du nouveau repo (ViteProject) et cliquer sur create repositories
-=> faire un copier coller dans le terminal du code affiché dans le QuickSetup
-=> executer toutes les commandes
+- Connexion à GITHUB
+- dans Repositories, cliquer sur new (vérifier le repo soit public)
+- mettre le nom du nouveau repo (ViteProject) et cliquer sur create repositories
+- faire un copier coller dans le terminal du code affiché dans le QuickSetup et executer toutes les commandes
 
 ```bash
 echo "# ViteProject" >> README.md
@@ -69,16 +69,16 @@ npm install gh-pages --save-dev
 ```
 
 ## 8) Modification des scripts dans le fichier package.json
-```js
 AVANT:
+```js
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
 ```
-```js
 APRES:
+```js
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -90,20 +90,20 @@ APRES:
 
 ## 9) Modification de la homepage dans le fichier package.json
 => Mettre le bon nom du repo dans <username> 
-```js
 AVANT:
+```js
 {
   "name": "myviteproject",
 ```
-```bash
 APRES:
+```bash
 {
   "name": "myviteproject",
   "homepage": "https://TcharlyMusic.github.io/",
 ```
 
 ## 10) Creer le fichier vite.config.js avec le contenu
-=> Modifier le NomDuRepo avec celui creer sur GIT
+Modifier le NomDuRepo avec celui creer sur GIT
 ```js
 import { defineConfig } from 'vite'
 export default defineConfig({
@@ -111,15 +111,15 @@ export default defineConfig({
 })
 ```
 
-## 11) Deploiement dans le repo
+## 11) Deploiement en local
+```bash
+npm run dev
+```
+Un test en local est alors possible sur l'url indiqué (http://localhost:XXXX)
+
+## 12) Deploiement dans le repo
 ```bash
 npm run deploy
 ```
 Le site est alors fonctionnel sur "https://TcharlyMusic.github.io/ViteProject"
-
-## 12) Deploiement en local
-```bash
-npm run dev
-```
-Le site est alors fonctionnel sur "(http://localhost/ViteProject)"
 
