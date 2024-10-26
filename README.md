@@ -1,7 +1,14 @@
 # ViteProject
+---
+title: Monter un site web simple
+summary: Comment monter un site web tout simple à l'aide de ViteJS et GitHub Pages
+date: 2024-09-27
+tags: ["web", "tutoriel"]
+authors: "TcharlyMusic"
+---
 
 ## 1) Installation de Vite pour le nouveau Projet 
-Dans le terminela, se placer dans le repertoire ou l'on veut que le projet se trouve et executer la commande : 
+Dans le terminal, se placer dans le repertoire ou l'on veut que le projet se trouve et executer la commande : 
 ```bash
 npm create vite@latest
 ```
@@ -12,6 +19,7 @@ Il faut alors :
 - Choix du langage (javascript)
 
 ## 2) Installation et mise à jour des Packages
+Executer les commandes : 
 ```bash
 cd ViteProject
 npm install
@@ -43,6 +51,7 @@ bouton.addEventListener("click", () => { app.innerHTML += "<p>Bien joué !</p>" 
 ```
 
 ## 5) Test des Modifications
+Executer la commande : 
 ```bash
 npm run dev
 ```
@@ -53,7 +62,6 @@ Un test en local est alors possible sur l'url indiqué (http://localhost:XXXX)
 - dans Repositories, cliquer sur new (vérifier le repo soit public)
 - mettre le nom du nouveau repo (ViteProject) et cliquer sur create repositories
 - faire un copier coller dans le terminal du code affiché dans le QuickSetup et executer toutes les commandes
-
 ```bash
 echo "# ViteProject" >> README.md
 git init
@@ -65,6 +73,7 @@ git push -u origin main
 ```
 
 ## 7) Installer gh-pages
+Executer la commande : 
 ```bash
 npm install gh-pages --save-dev
 ```
@@ -94,17 +103,17 @@ APRES:
 AVANT:
 ```js
 {
-  "name": "myviteproject",
+  "name": "viteproject",
 ```
 APRES:
 ```bash
 {
-  "name": "myviteproject",
+  "name": "viteproject",
   "homepage": "https://TcharlyMusic.github.io/",
 ```
 
-## 10) Creer le fichier vite.config.js avec le contenu
-Modifier le NomDuRepo avec celui creer sur GIT
+## 10) Creer le fichier vite.config.js
+Ajouter le contenu et modifier le NomDuRepo avec celui creer sur GIT (ne pas oublier les '/') : 
 ```js
 import { defineConfig } from 'vite'
 export default defineConfig({
