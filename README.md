@@ -166,8 +166,17 @@ projet/
 └── style.css
 ```
 
+<a name="#ViteProject-14"></a>
 ## 14) Mes alertes ne marchent pas
 
 {{< alert "circle-info" >}}
 Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer `npm run deploy` dans un *terminal*.
 {{< /alert >}}
+
+<a name="#ViteProject-14"></a>
+## 15) Image
+![Texte alternatif](https://example.com/image.jpg "Le titre de mon image")
+
+
+
+
