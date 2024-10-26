@@ -1,22 +1,15 @@
 # ViteProject
----
-title: Monter un site web simple
-summary: Comment monter un site web tout simple à l'aide de ViteJS et GitHub Pages
-date: 2024-09-27
-tags: ["web", "tutoriel"]
-authors: "TcharlyMusic"
----
 
 ## 1) Installation de Vite pour le nouveau Projet 
-Dans le terminal, se placer dans le repertoire ou l'on veut que le projet se trouve et executer la commande : 
+Dans le *terminal*, se **placer** dans le ***repertoire*** ou l'on veut que le projet se trouve et executer la commande : 
 ```bash
 npm create vite@latest
 ```
 Il faut alors : 
-- Saisie du Nouveau Projet (ViteProject)
-- Validation du Package Name (viteproject)
-- Validation du Framework (vanilla)
-- Choix du langage (javascript)
+- Saisie du Nouveau Projet : `ViteProject`
+- Validation du Package Name : `viteproject`
+- Validation du Framework : `vanilla`
+- Choix du langage : `javascript`
 
 ## 2) Installation et mise à jour des Packages
 Executer les commandes : 
@@ -25,7 +18,7 @@ cd ViteProject
 npm install
 npm run dev
 ```
-Un test en local est alors possible sur l'url indiqué (http://localhost:XXXX)
+Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 
 ## 3) Modification du fichier index.html
 AVANT :
@@ -42,7 +35,7 @@ APRES :
 ```
 
 ## 4) Modification du fichier main.js
-Remplacer tout le code du main.js par :
+Remplacer tout le code du `main.js` par :
 ```js
 import './style.css'
 let bouton = document.getElementById("clic-btn");
@@ -55,13 +48,13 @@ Executer la commande :
 ```bash
 npm run dev
 ```
-Un test en local est alors possible sur l'url indiqué (http://localhost:XXXX)
+Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 
 ## 6) Creer le repo sur GitHub
-- Connexion à GITHUB
-- dans Repositories, cliquer sur new (vérifier le repo soit public)
-- mettre le nom du nouveau repo (ViteProject) et cliquer sur create repositories
-- faire un copier coller dans le terminal du code affiché dans le QuickSetup et executer toutes les commandes
+- Connexion à `GITHUB`
+- dans `Repositories`, cliquer sur `New` et vérifier le repo soit public
+- mettre le nom du nouveau repo `ViteProject` et cliquer sur `Create Repository`
+- faire un copier coller dans le terminal du code affiché dans le `QuickSetup` et executer toutes les commandes :
 ```bash
 echo "# ViteProject" >> README.md
 git init
@@ -78,7 +71,8 @@ Executer la commande :
 npm install gh-pages --save-dev
 ```
 
-## 8) Modification des scripts dans le fichier package.json
+## 8) Modification des scripts
+Modifier le fichier `package.json` :
 AVANT:
 ```js
   "scripts": {
@@ -98,8 +92,8 @@ APRES:
   },
 ```
 
-## 9) Modification de la homepage dans le fichier package.json
-=> Mettre le bon nom du repo dans <username> 
+## 9) Modification de la homepage 
+Dans le fichier `package.json`, mettre le bon nom du repo dans `homepage` : 
 AVANT:
 ```js
 {
@@ -112,8 +106,8 @@ APRES:
   "homepage": "https://TcharlyMusic.github.io/",
 ```
 
-## 10) Creer le fichier vite.config.js
-Ajouter le contenu et modifier le NomDuRepo avec celui creer sur GIT (ne pas oublier les '/') : 
+## 10) Creer la configuration vite
+Ajouter le fichier 'vite.config.js' dans le repo et ajouter le contenu en modifier le `NomDuRepo` avec celui creer sur GIT (ne pas oublier les '/') : 
 ```js
 import { defineConfig } from 'vite'
 export default defineConfig({
@@ -125,11 +119,10 @@ export default defineConfig({
 ```bash
 npm run dev
 ```
-Un test en local est alors possible sur l'url indiqué (http://localhost:XXXX)
+Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 
 ## 12) Deploiement dans le repo
 ```bash
 npm run deploy
 ```
 Le site est alors fonctionnel sur "https://TcharlyMusic.github.io/ViteProject"
-
