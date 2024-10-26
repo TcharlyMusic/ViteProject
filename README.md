@@ -19,12 +19,11 @@ npm run dev
 Un test en local est alors possible sur l'url indiqué (http://localhost:5173)
 
 ## 3) Modification du fichier index.html
-=> Ajout de code dans le fichier index.html
-=> AVANT :
+AVANT :
 ```html
     <div id="app"></div>
 ```
-=> APRES :
+APRES :
 ```html
     <div id="app">
       <h1>Bonjour tout le monde !</h1>
