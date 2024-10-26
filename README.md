@@ -5,10 +5,10 @@
 ```bash
 npm create vite@latest
 ```
-#### Saisie du Nouveau Projet (ViteProject)
-#### Validation du Package Name (viteproject)
-#### Validation du Framework (vanilla)
-#### Choix du langage (javascript)
+Saisie du Nouveau Projet (ViteProject)
+Validation du Package Name (viteproject)
+Validation du Framework (vanilla)
+Choix du langage (javascript)
 
 ## 2) Installation et mise à jour des Packages
 ```bash
@@ -19,8 +19,12 @@ npm run dev
 Un test en local est alors possible sur l'url indiqué (http://localhost:5173)
 
 ## 3) Modification du fichier index.html
-=> Ajout de code dans le fichier index.html dans la banière <div id="app"></div>
-=> Remplacer la bannière par :
+=> Ajout de code dans le fichier index.html
+=> AVANT :
+```html
+    <div id="app"></div>
+```
+=> APRES :
 ```html
     <div id="app">
       <h1>Bonjour tout le monde !</h1>
