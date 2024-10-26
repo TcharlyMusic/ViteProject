@@ -175,7 +175,7 @@ Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer 
 
 <a name="ViteProject-15"></a>
 ## 15) Image
-![Texte affiché pour l'image]([https://example.com/image.jpg](https://wallpapercave.com/wp/nV132Vj.jpg) "Texte du Tooltip de l'image")
+![Texte affiché pour l'image]([https://wallpapercave.com/wp/nV132Vj.jpg] "Texte du Tooltip de l'image")
 
 
 
