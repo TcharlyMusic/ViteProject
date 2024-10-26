@@ -51,10 +51,10 @@ npm run dev
 Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 
 ## 6) Creer le repo sur GitHub
-- Connexion à `GITHUB`
-- dans `Repositories`, cliquer sur `New` et vérifier le repo soit public
-- mettre le nom du nouveau repo `ViteProject` et cliquer sur `Create Repository`
-- faire un copier coller dans le terminal du code affiché dans le `QuickSetup` et executer toutes les commandes :
+- Connexion à `GitHub`
+- Dans `Repositories`, cliquer sur `New` et vérifier le repo soit public
+- Mettre le nom du nouveau repo `ViteProject` et cliquer sur `Create Repository`
+- Faire un *copier coller* dans le terminal du code affiché dans le `QuickSetup` et executer toutes les commandes :
 ```bash
 echo "# ViteProject" >> README.md
 git init
