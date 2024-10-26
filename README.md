@@ -175,6 +175,6 @@ Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer 
 
 <a name="ViteProject-15"></a>
 ## 15) Image
-![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+![Some Text](https://wallpapercave.com/wp/nV132Vj.jpg)
 
 
