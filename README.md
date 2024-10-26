@@ -1,7 +1,7 @@
 # ViteProject
 
-## 1) Installation de Vite pour le nouveau Projet 
-Dans le *terminal*, se **placer** dans le ***repertoire*** ou l'on veut que le projet se trouve et executer la commande : 
+## 1) Installation de **Vite** pour le nouveau Projet 
+Dans le *terminal*, se placer dans le repertoire ou l'on veut que le projet se trouve et executer la commande : 
 ```bash
 npm create vite@latest
 ```
@@ -64,6 +64,9 @@ git branch -M main
 git remote add origin https://github.com/TcharlyMusic/ViteProject.git
 git push -u origin main
 ```
+{{< alert "circle-info" >}}
+Lors de la création d'un repo *vraiment* vide (pas de `README`, pas de `.gitignore`, rien), ces commandes sont listées en bas de la page.
+{{< /alert >}}
 
 ## 7) Installer gh-pages
 Executer la commande : 
@@ -126,3 +129,16 @@ Un test en local est alors possible sur l'url indiqué `http://localhost:XXXX`
 npm run deploy
 ```
 Le site est alors fonctionnel sur "https://TcharlyMusic.github.io/ViteProject"
+
+
+## 13) Architecture du site
+```
+projet/
+├── index.html
+├── main.js
+├── package.json
+├── public/
+│   └── Ici se trouvent toutes les images du site
+└── style.css
+```
+
