@@ -107,7 +107,7 @@ APRES:
 ```js
 {
   "name": "viteproject",
-  "homepage": "https://TcharlyMusic.github.io/",
+  "homepage": "https://**<username>**.github.io/",
 ```
 
 ## 10) Creer la configuration vite
