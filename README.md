@@ -204,7 +204,12 @@ Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer 
 
 <a name="ViteProject-17"></a>
 ## 17) Colors
-<span style="color:red"> *some emphasized markdown text*</span>
+- <span style="color:red"> *some emphasized markdown text*</span>
+- Some Markdown text with <span style="color:blue">some *blue* text</span>.
+- <p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
+- A very <span style='color: red;'>long</span> sentence.
+
+
 
 
 
