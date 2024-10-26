@@ -4,13 +4,13 @@
 1) Installation de Vite pour le nouveau Projet 
 => Se placer dans le repertoire ou on veut que le projet se trouve
 CMD: npm create vite@latest
-=> Saisie du Nouveau Projet (MyViteProject)
-=> Validation du Package Name (myviteproject)
+=> Saisie du Nouveau Projet (ViteProject)
+=> Validation du Package Name (viteproject)
 => Validation du Framework (vanilla)
 => Choix du langage (javascript)
 
 2) Installation et mise à jour des Packages
-CMD: cd MyViteProject
+CMD: cd ViteProject
 CMD: npm install
 CMD: npm run dev
 Un test en local est alors possible sur l'url indiqué (http://localhost:5173)
