@@ -178,18 +178,27 @@ Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer 
 ![Some Text](https://wallpapercave.com/wp/nV132Vj.jpg "In the Tooltip")
 
 ## 16) Special Warning Boxes
->[!NOTE]
->Highlights information that users should take into account, even when skimming.
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
 
->[!IMPORTANT]
->Crucial information necessary for users to succeed.
+> [!TIP]
+> Optional information to help a user be more successful.
 
->[!WARNING]
->Critical content demanding immediate user attention due to potential risks.
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
 
 <a name="ViteProject-16"></a>
 ## 16) Tables
 
-
-
+| Left         | Centered         | Right                      |
+| :----------- | :--------------: | -------------------------: |
+| This is left | Text is centered | And this is right-aligned  |
+| More text    | Even more text   | And even more to the right |
+| Adding Pipe  | Even \| text     | **test**                   |
 
