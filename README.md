@@ -1,14 +1,15 @@
 # ViteProject
 
 ## 1) Installation de Vite pour le nouveau Projet 
-=> Se placer dans le repertoire ou on veut que le projet se trouve
+Dans le terminela, se placer dans le repertoire ou l'on veut que le projet se trouve et executer la commande : 
 ```bash
 npm create vite@latest
 ```
-Saisie du Nouveau Projet (ViteProject)
-Validation du Package Name (viteproject)
-Validation du Framework (vanilla)
-Choix du langage (javascript)
+Il faut alors : 
+- Saisie du Nouveau Projet (ViteProject)
+- Validation du Package Name (viteproject)
+- Validation du Framework (vanilla)
+- Choix du langage (javascript)
 
 ## 2) Installation et mise à jour des Packages
 ```bash
