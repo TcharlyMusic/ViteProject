@@ -65,11 +65,6 @@ git remote add origin https://github.com/TcharlyMusic/ViteProject.git
 git push -u origin main
 ```
 
-{{<alert "circle-info">}}
-Lors de la création d'un repo *vraiment* vide (pas de `README`, pas de `.gitignore`, rien), ces commandes sont listées en bas de la page.
-{{</alert>}}
-
-
 ## 7) Installer gh-pages
 Executer la commande : 
 ```bash
@@ -103,19 +98,19 @@ AVANT:
 {
   "name": "viteproject",
 ```
-APRES:
+APRES (remplacer `<username>` par celui sur GitHub) :
 ```js
 {
   "name": "viteproject",
-  "homepage": "https://**<username>**.github.io/",
+  "homepage": "https://<username>.github.io/",
 ```
 
 ## 10) Creer la configuration vite
-Ajouter le fichier 'vite.config.js' dans le repo et ajouter le contenu en modifier le `NomDuRepo` avec celui creer sur GIT (ne pas oublier les '/') : 
+Ajouter le fichier 'vite.config.js' dans le repo et ajouter le contenu en modifier le `<NomDuRepo>` avec celui creer sur GitHub (ne pas oublier les '/') : 
 ```js
 import { defineConfig } from 'vite'
 export default defineConfig({
-  base:'/NomDuRepo/'
+  base:'/<NomDuRepo>/'
 })
 ```
 
@@ -143,3 +138,8 @@ projet/
 └── style.css
 ```
 
+## 14) Mes alertes ne marchent pas
+
+{{< alert "circle-info" >}}
+Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer `npm run deploy` dans un *terminal*.
+{{< /alert >}}
