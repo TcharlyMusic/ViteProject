@@ -196,7 +196,7 @@ Ceci est un test d'alerte sur mon **nouveau site**, il faut simplement relancer 
 <a name="ViteProject-16"></a>
 ## 16) Tables
 
-| Left         | Centered         | Right                      |
+| **Left**     | **Centered**     | **Right**                  |
 | :----------- | :--------------: | -------------------------: |
 | This is left | Text is centered | And this is right-aligned  |
 | More text    | Even more text   | And even more to the right |
