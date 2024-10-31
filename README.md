@@ -1,5 +1,6 @@
 # ViteProject
-Inspired by : https://github.com/DaiF1
+> [!NOTE]  
+> Inspired by : https://github.com/DaiF1
 
 ## Table of Contents
 1. [Installation de Vite pour le nouveau Projet](#ViteProject-01)
